@@ -1,68 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width = device-width,initial-scale=1.0">
-        <link rel="icon" type="/image/jpg" href="favicon.ico">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <title>Joel Amos Philip</title>
-    </head>
-    <body>
-        <header>
-            <h1>Joel Amos Philip</h1>
-            <p>Aspiring Software & Web Architect </p>
-            <hr>
-        </header>
-            <nav>
-                <hr>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <hr>
-            </nav>
-        <main>
-            <section id="about">
-                <p>Hi, I'm Joel Amos Philip, a Computer Science Engineering graduate from the College of Engineering Poonjar. I’m fervent about technology—especially in the realms of cybersecurity, automation, and software development.</p>
-            </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joel Amos Philip | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 scroll-smooth">
 
-            <section id="skills">
-                <h4>My Skills</h4>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>SQL</li>
-                    <li>Git</li>
-                    <li>C</li>
-                </ul>
-            </section>
+  <!-- Navbar -->
+  <header class="bg-gray-900 text-white fixed w-full z-10 shadow">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Joel Amos Philip</h1>
+      <nav class="space-x-6">
+        <a href="#home" class="hover:text-yellow-400">Home</a>
+        <a href="#about" class="hover:text-yellow-400">About</a>
+        <a href="#projects" class="hover:text-yellow-400">Projects</a>
+        <a href="#contact" class="hover:text-yellow-400">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-            <section>
-                <h4>Projects</h4>
-                <p>Here are some of my projects:</p>
-                <ul>
-                    <li>CyberSence Navigator</li>
-                    <li>Do-Note</li>
-                    <li>Intruision Detection System</li>
-                </ul>
-            </section>
+  <!-- Home -->
+  <section id="home" class="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white pt-20">
+    <img src="images/avatar.jpg" alt="Joel Photo" class="w-32 h-32 rounded-full shadow mb-4">
+    <h2 class="text-3xl font-bold">Joel Amos Philip</h2>
+    <p class="text-lg mt-1">Software Developer | CSE Graduate</p>
+    <p class="italic mt-2">"Crafting solutions. Navigating innovation."</p>
+    <a href="#" class="mt-4 bg-white text-indigo-800 px-5 py-2 rounded-lg shadow hover:scale-105 transition">Download Resume</a>
+  </section>
 
-            <section>
-                <p>My Contact Info</p>
-                <p>Phone: 1234567890</p>
-                <p>Email: joelamosphilip@gmail.com</p>
-                
-            </section>
-        </main>
-        <footer>
-            <hr>
-            <p>Author: Joel Amos Philip &copy;Copyright 2025. All rights reserved</p>
-        </footer>
-    </body>
+  <!-- About -->
+  <section id="about" class="py-20 px-4 bg-gray-100">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-2xl font-bold mb-4 text-center">About Me</h3>
+      <p class="text-gray-700 mb-6 text-center">
+        I'm Joel Amos Philip, a Computer Science Engineering graduate from College of Engineering, Poonjar. I’m passionate about cybersecurity, automation, and software development. I have hands-on experience building real-world projects that combine system-level logic and user-focused design.
+      </p>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h4 class="font-semibold mb-2">Skills</h4>
+          <ul class="list-disc pl-5 text-gray-700">
+            <li>C, Java</li>
+            <li>HTML, Tailwind CSS, JavaScript</li>
+            <li>Git & GitHub</li>
+            <li>MongoDB, Cowrie Honeypot</li>
+            <li>VMware, Debian, AdaBoost (ML)</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">Education</h4>
+          <ul class="list-disc pl-5 text-gray-700">
+            <li>B.Tech in Computer Science - College of Engineering Poonjar</li>
+            <li>Graduated in 2025</li>
+            <li>Final Year Projects: IDS & AI Assistant</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 px-4 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-2xl font-bold text-center mb-10">Projects</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- DoNote Project -->
+        <div class="bg-gray-100 p-4 rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
+          <img src="images/project1.png" alt="DoNote App" class="rounded mb-3">
+          <h4 class="text-xl font-semibold">DoNote - Notes & Tasks App</h4>
+          <p class="text-sm text-gray-700">A modern productivity app with note-taking, task editing, color tags, and local storage. Built with Tailwind, JS, and HTML.</p>
+          <a href="#" class="text-blue-500 mt-2 inline-block">GitHub Repo →</a>
+        </div>
+
+        <!-- Cybersense Navigator -->
+        <div class="bg-gray-100 p-4 rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
+          <img src="images/project2.png" alt="Cybersense Navigator" class="rounded mb-3">
+          <h4 class="text-xl font-semibold">Cybersense Navigator</h4>
+          <p class="text-sm text-gray-700">An AI desktop assistant chatbot with voice command integration and system automation. Built using Python, ML, and UI automation.</p>
+          <a href="#" class="text-blue-500 mt-2 inline-block">GitHub Repo →</a>
+        </div>
+
+        <!-- Intrusion Detection System -->
+        <div class="bg-gray-100 p-4 rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
+          <img src="images/project3.png" alt="IDS Project" class="rounded mb-3">
+          <h4 class="text-xl font-semibold">Intrusion Detection System</h4>
+          <p class="text-sm text-gray-700">A honeypot-based IDS using Cowrie, Debian, and MongoDB to detect malicious SSH attacks. Includes ML-based detection with AdaBoost.</p>
+          <a href="#" class="text-blue-500 mt-2 inline-block">GitHub Repo →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 px-4 bg-gray-100">
+    <div class="max-w-xl mx-auto">
+      <h3 class="text-2xl font-bold text-center mb-6">Contact Me</h3>
+      <form class="space-y-4">
+        <input type="text" placeholder="Name" class="w-full p-3 border border-gray-300 rounded" required>
+        <input type="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded" required>
+        <textarea placeholder="Message" rows="5" class="w-full p-3 border border-gray-300 rounded" required></textarea>
+        <button type="submit" class="bg-indigo-700 text-white px-6 py-2 rounded hover:bg-indigo-800">Submit</button>
+      </form>
+      <div class="flex justify-center space-x-4 mt-6 text-gray-600">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-gray-800 text-white">
+    &copy; 2025 Joel Amos Philip. All Rights Reserved.
+  </footer>
+
+</body>
 </html>
