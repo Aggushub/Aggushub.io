@@ -1,8 +1,4 @@
-Here’s your final, **personal and heartfelt** `README` write-up — now including your journey, basic web pages you built, learning HTML/CSS/JS, and your thanks to **Anshul Sir** and the **DevTown Team**:
-
----
-
-### 📘 My Portfolio – DevTown Bootcamp Project Journey
+# My Portfolio – DevTown Bootcamp Project Journey
 
 Hey there! 👋
 
@@ -64,7 +60,3 @@ This project stands as proof of what a few weeks of focused learning and the rig
 > To anyone reading this: Learn with intent. Build with love. And trust the process.
 
 – **Joel Amos Philip**
-
----
-
-Would you like this saved as a `README.md` file now?
