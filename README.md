@@ -54,7 +54,7 @@ I want to sincerely thank **Anshul Sir** and the **DevTown Team** for conducting
 
 Your mentorship, clarity, and positive energy helped me grow immensely — not just in code, but in confidence.
 
-This project stands as proof of what a few weeks of focused learning and the right guidance can do. 🚀
+This project stands as proof of what a few days of focused learning and the right guidance can do. 🚀
 
 ---
 
