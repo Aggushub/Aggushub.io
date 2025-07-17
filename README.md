@@ -1,5 +1,6 @@
 # My Portfolio – DevTown Bootcamp Project Journey
 
+<img src = "PP.png">
 Hey there! 👋
 
 This portfolio website was built as part of the **Tailwind CSS Bootcamp conducted by DevTown**, and honestly — joining this bootcamp was one of the best decisions I made in my developer journey.
