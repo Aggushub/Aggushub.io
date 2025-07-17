@@ -5,114 +5,178 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Joel Amos Philip | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yH4+24QcL+SdcU1R2G3+v0m3Eo2qQgz3cZL7rDgJ6kK7Fy5OQrZ9uW+3PZ93h6iNEhLqgBoYDjU2OMMOG0gDlA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="images/x-icon" href="favi.ico" />
 </head>
-<body class="bg-white text-gray-900 scroll-smooth">
+<body class="bg-white text-gray-800 scroll-smooth">
 
-  <!-- Navbar -->
-  <header class="bg-gray-900 text-white fixed w-full z-10 shadow">
+  <!-- navigation section -->
+  <header class="bg-gray-900 text-white fixed w-full z-10 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold">Joel Amos Philip</h1>
-      <nav class="space-x-6">
-        <a href="#home" class="hover:text-yellow-400">Home</a>
-        <a href="#about" class="hover:text-yellow-400">About</a>
-        <a href="#projects" class="hover:text-yellow-400">Projects</a>
-        <a href="#contact" class="hover:text-yellow-400">Contact</a>
+      <h1 class="text-xl font-semibold tracking-wide">Joel Amos Philip</h1>
+      <nav class="space-x-6 text-sm font-medium">
+        <a href="#home" class="hover:text-indigo-300 transition">Home</a>
+        <a href="#about" class="hover:text-indigo-300 transition">About</a>
+        <a href="#projects" class="hover:text-indigo-300 transition">Projects</a>
+        <a href="#achievements" class="hover:text-indigo-300 transition">Achievements</a>
+        <a href="#contact" class="hover:text-indigo-300 transition">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Home -->
-  <section id="home" class="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white pt-20">
-    <img src="images/avatar.jpg" alt="Joel Photo" class="w-32 h-32 rounded-full shadow mb-4">
-    <h2 class="text-3xl font-bold">Joel Amos Philip</h2>
-    <p class="text-lg mt-1">Software Developer | CSE Graduate</p>
-    <p class="italic mt-2">"Crafting solutions. Navigating innovation."</p>
-    <a href="#" class="mt-4 bg-white text-indigo-800 px-5 py-2 rounded-lg shadow hover:scale-105 transition">Download Resume</a>
+  <!-- home section-->
+  <section id="home" class="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-slate-900 to-gray-800 text-white pt-20">
+    <img src="mepic.jpg" alt="Joel Photo" class="w-36 h-36 rounded-full border-2 border-gray-300 ring-2 ring-gray-500 shadow-sm mb-5 object-cover">
+    <h2 class="text-4xl font-semibold hover:text-blue-300 transition">Joel Amos Philip</h2>
+    <p class="text-md mt-2 text-gray-300">@Dead Man Coding</p>
+    <img src="https://readme-typing-svg.demolab.com?font=&size=21&pause=1000&color=F7F7F7&background=FF000000&multiline=true&repeat=false&width=435&lines=%22Aspiring+Software+%26+Web+Developer%22+%7C+Python%2C+C%2C+Javascript%2C+Front-End+%7C+Shaping+ideas+into+systems+with+clarity%2C+creativity+%26+a+love+for+lasting+impact.%22" alt="Typing SVG" class="mt-4" />
+    <a href="MeCV.pdf" class="mt-6 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded shadow-sm transition" target="_blank">Download Resume</a>
   </section>
 
-  <!-- About -->
-  <section id="about" class="py-20 px-4 bg-gray-100">
+  <!-- about section-->
+  <section id="about" class="py-20 px-4 bg-gradient-to-b from-slate-100 to-white">
     <div class="max-w-5xl mx-auto">
-      <h3 class="text-2xl font-bold mb-4 text-center">About Me</h3>
-      <p class="text-gray-700 mb-6 text-center">
-        I'm Joel Amos Philip, a Computer Science Engineering graduate from College of Engineering, Poonjar. I’m passionate about cybersecurity, automation, and software development. I have hands-on experience building real-world projects that combine system-level logic and user-focused design.
+      <h3 class="text-3xl font-semibold text-center mb-8 text-gray-800">About Me</h3>
+      <p class="text-center text-gray-600 leading-relaxed mb-10">
+        I'm Joel Amos Philip, a Computer Science Engineering graduate from College of Engineering, Poonjar. Passionate about cybersecurity, automation, and software development, I create real-world projects that combine logic and usability.
       </p>
-      <div class="grid md:grid-cols-2 gap-8">
+      <div class="grid md:grid-cols-2 gap-8 text-gray-700">
         <div>
-          <h4 class="font-semibold mb-2">Skills</h4>
-          <ul class="list-disc pl-5 text-gray-700">
-            <li>C, Java</li>
-            <li>HTML, Tailwind CSS, JavaScript</li>
-            <li>Git & GitHub</li>
-            <li>MongoDB, Cowrie Honeypot</li>
-            <li>VMware, Debian, AdaBoost (ML)</li>
-          </ul>
+          <h4 class="font-medium text-lg mb-3">Skills</h4>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            <div class="flex items-center space-x-2">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" class="w-6 h-6" />
+              <span>C</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="w-6 h-6" />
+              <span>Java</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-6 h-6" />
+              <span>HTML</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-6 h-6" />
+              <span>JavaScript</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="w-6 h-6" />
+              <span>MongoDB</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="w-6 h-6" />
+              <span>Git</span>
+            </div>
+          </div>
         </div>
         <div>
-          <h4 class="font-semibold mb-2">Education</h4>
-          <ul class="list-disc pl-5 text-gray-700">
-            <li>B.Tech in Computer Science - College of Engineering Poonjar</li>
+          <h4 class="font-medium text-lg mb-3">Education</h4>
+          <ul class="list-disc pl-5 space-y-1">
+            <li>B.Tech in Computer Science – College of Engineering Poonjar</li>
             <li>Graduated in 2025</li>
-            <li>Final Year Projects: IDS & AI Assistant</li>
+            <li>CGPA:- 8.89</li>
+
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="py-20 px-4 bg-white">
+  <!-- projects section -->
+  <section id="projects" class="py-20 px-4 bg-gradient-to-b from-white to-slate-100">
     <div class="max-w-6xl mx-auto">
-      <h3 class="text-2xl font-bold text-center mb-10">Projects</h3>
+      <h3 class="text-3xl font-semibold text-center mb-12 text-gray-800">Projects</h3>
       <div class="grid md:grid-cols-3 gap-8">
 
-        <!-- DoNote Project -->
         <div class="bg-gray-100 p-4 rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
-          <img src="images/project1.png" alt="DoNote App" class="rounded mb-3">
-          <h4 class="text-xl font-semibold">DoNote - Notes & Tasks App</h4>
-          <p class="text-sm text-gray-700">A modern productivity app with note-taking, task editing, color tags, and local storage. Built with Tailwind, JS, and HTML.</p>
-          <a href="#" class="text-blue-500 mt-2 inline-block">GitHub Repo →</a>
+          <img src="donote.png" alt="DoNote App" class="rounded mb-4">
+          <h4 class="text-xl font-semibold text-gray-900 mb-1">DoNote – Notes & Tasks App</h4>
+          <p class="text-sm text-gray-600">A modern productivity app with notes, task editing, color tags, and local storage. Built with Tailwind, JS, and HTML.</p>
+          <a href="https://github.com/Aggushub/Do-Note.git" target="_blank" class="text-indigo-600 mt-3 inline-block text-sm font-medium">GitHub Repo →</a>
         </div>
 
-        <!-- Cybersense Navigator -->
         <div class="bg-gray-100 p-4 rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
-          <img src="images/project2.png" alt="Cybersense Navigator" class="rounded mb-3">
-          <h4 class="text-xl font-semibold">Cybersense Navigator</h4>
-          <p class="text-sm text-gray-700">An AI desktop assistant chatbot with voice command integration and system automation. Built using Python, ML, and UI automation.</p>
-          <a href="#" class="text-blue-500 mt-2 inline-block">GitHub Repo →</a>
+          <img src="cyber.png" alt="Cybersense Navigator" class="rounded mb-4">
+          <h4 class="text-xl font-semibold text-gray-900 mb-1">Cybersense Navigator</h4>
+          <p class="text-sm text-gray-600">An AI desktop assistant with voice commands and system automation. Built using Python, ML, and UI automation.</p>
+          <a href="https://github.com/Aggushub/Cybersence-Navigator.git" target="_blank" class="text-indigo-600 mt-3 inline-block text-sm font-medium">GitHub Repo →</a>
         </div>
 
-        <!-- Intrusion Detection System -->
         <div class="bg-gray-100 p-4 rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
-          <img src="images/project3.png" alt="IDS Project" class="rounded mb-3">
-          <h4 class="text-xl font-semibold">Intrusion Detection System</h4>
-          <p class="text-sm text-gray-700">A honeypot-based IDS using Cowrie, Debian, and MongoDB to detect malicious SSH attacks. Includes ML-based detection with AdaBoost.</p>
-          <a href="#" class="text-blue-500 mt-2 inline-block">GitHub Repo →</a>
+          <img src="ids.png" alt="IDS Project" class="rounded mb-4">
+          <h4 class="text-xl font-semibold text-gray-900 mb-1">Intrusion Detection System</h4>
+          <p class="text-sm text-gray-600">A honeypot-based IDS using Cowrie, Debian, and MongoDB to detect malicious SSH attacks with AdaBoost-based ML detection.</p>
+          <a href="https://github.com/Aggushub/IDS-System.git" target="_blank" class="text-indigo-600 mt-3 inline-block text-sm font-medium">GitHub Repo →</a>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="py-20 px-4 bg-gray-100">
-    <div class="max-w-xl mx-auto">
-      <h3 class="text-2xl font-bold text-center mb-6">Contact Me</h3>
-      <form class="space-y-4">
-        <input type="text" placeholder="Name" class="w-full p-3 border border-gray-300 rounded" required>
-        <input type="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded" required>
-        <textarea placeholder="Message" rows="5" class="w-full p-3 border border-gray-300 rounded" required></textarea>
-        <button type="submit" class="bg-indigo-700 text-white px-6 py-2 rounded hover:bg-indigo-800">Submit</button>
-      </form>
-      <div class="flex justify-center space-x-4 mt-6 text-gray-600">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
+  <!-- achievements section (AddOn)-->
+  <section id="achievements" class="py-20 px-4 bg-gradient-to-b from-gray-100 to-white">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-3xl font-semibold text-center mb-10 text-gray-800">Achievements & Certifications</h3>
+      <div class="grid md:grid-cols-2 gap-8 text-gray-700">
+        <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+          <h4 class="text-lg font-semibold mb-2 text-gray-900">TCS iON Career Edge</h4>
+          <p class="text-sm">Completed the program focusing on soft skills, business etiquette, and interview preparation.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+          <h4 class="text-lg font-semibold mb-2 text-gray-900">JavaScript Bootcamp – AICTE</h4>
+          <p class="text-sm">Participated in a virtual internship covering JS basics, tools, and data structures.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+          <h4 class="text-lg font-semibold mb-2 text-gray-900">Git & GitHub Mastery – Udemy</h4>
+          <p class="text-sm">Earned certification in Git workflow and GitHub collaboration techniques.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+          <h4 class="text-lg font-semibold mb-2 text-gray-900">Anaconda Basics – Anaconda Inc.</h4>
+          <p class="text-sm">Learned the structure of Anaconda and how it supports Python environments.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="text-center py-6 bg-gray-800 text-white">
+<!-- contact section-->
+<section id="contact" class="py-20 px-4 bg-gradient-to-b from-slate-800 to-gray-900 text-white">
+  <div class="max-w-xl mx-auto">
+    <h3 class="text-3xl font-semibold text-center mb-8">Contact Me</h3>
+    
+    <form class="space-y-5">
+      <input type="text" placeholder="Name" class="w-full p-3 rounded border border-gray-300 text-gray-900" required>
+      <input type="email" placeholder="Email" class="w-full p-3 rounded border border-gray-300 text-gray-900" required>
+      <textarea placeholder="Message" rows="5" class="w-full p-3 rounded border border-gray-300 text-gray-900" required></textarea>
+      <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 px-6 py-2 rounded text-white font-medium transition">Send Message</button>
+    </form>
+
+    <div class="mt-10 text-center">
+      <h4 class="text-xl font-semibold mb-4">Connect With Me</h4>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="https://discord.gg/diaggu" target="_blank">
+          <img src="https://img.shields.io/badge/Discord-%237289DA.svg?&style=for-the-badge&logo=discord&logoColor=white" alt="Discord Badge">
+        </a>
+        <a href="https://www.linkedin.com/in/aghu-a570b9227/" target="_blank">
+          <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
+        </a>
+        <a href="mailto:joelamosphilip@gmail.com">
+          <img src="https://img.shields.io/badge/Email-D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge">
+        </a>
+        <a href="https://wa.me/8943617444?text=Heyya%20Fella" target="_blank">
+          <img src="https://img.shields.io/badge/WhatsApp-%2325D366.svg?&style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp Badge">
+        </a>
+        <a href="https://github.com/Aggushub" target="_blank">
+          <img src="https://img.shields.io/badge/GitHub-%23222222.svg?&style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- footer section-->
+  <footer class="text-center py-6 bg-gray-800 text-gray-300 text-sm">
     &copy; 2025 Joel Amos Philip. All Rights Reserved.
   </footer>
 
